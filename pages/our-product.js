@@ -84,7 +84,7 @@ const OurProduct = () => {
         {products.map(({ name, fanpage, image, desc }) => (
           <div key={v4()} className="flex flex-col overflow-hidden rounded shadow">
             <Link target="_blank" href={fanpage}>
-              <img src={image} alt="product"></img>
+              <img src={image} alt="product" className="aspect-square"></img>
             </Link>
             <div className="flex flex-col gap-3 px-3 pt-4 pb-5">
               <p className="text-[16px] text-center hover:text-blue-400 text-black leading-6">
